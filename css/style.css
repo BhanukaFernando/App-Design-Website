@@ -12,11 +12,11 @@
 :: 10.0 pricing CSS
 :: 11.0 Contact CSS
 :: 12.0 Footer CSS
-:: 13.0 Scroll Top CSS
-    ============================================= */
+:: 13.0 Scroll Top CSS 
+*/
 
+/*:: 1.0 WEB FONTS */
 
-/*   :: 1.0 WEB FONTS  */
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
 
 /* :: 2.0 GLOBAL Variable Define CSS */
@@ -27,7 +27,7 @@
 
 :root {
 
-    /* background color */
+    /* Background Color */
     --bg-white: #fff;
     --bg-black: #2C2C2C;
     --bg-light-pink: #ff007a;
@@ -38,8 +38,7 @@
     --bg-light-gray-1: #eee;
 
 
-    /* Text color */
-
+    /* Text Color */
     --primary-font: "Poppins", sans-serif;
     ;
     --text-white: #fff;
@@ -49,7 +48,7 @@
     --text-light-gray: #7e8085;
 }
 
-/* :: 3.0 COMMON CSS  */
+/* :: 3.0 COMMON CSS */
 
 body {
     font-family: var(--primary-font);
@@ -179,8 +178,7 @@ img {
     padding: 100px 0;
 }
 
-
-/* :: 4.0 HEADER CSS  */
+/* :: 4.0 HEADER CSS */
 .navbar {
     position: absolute;
     top: 0;
@@ -252,10 +250,81 @@ img {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }
 
+
+
 /* :: 5.0 HOME CSS */
+#home {
+    min-height: 900px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) url(../images/bg.png) no-repeat scroll left center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+#home .home_text h2 {
+    font-size: 3.938rem;
+    font-weight: 700;
+    line-height: 4.938rem;
+    color: var(--text-white);
+    padding: 1.063rem 0;
+}
 
+#home .home_text p {
+    color: var(--text-white);
+    font-size: 1rem;
+    padding: 1.063rem 0;
+}
 
+#home .home-download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#home .home-download-btn .btn {
+    padding: 1.5rem 3rem;
+    margin-left: 1.5rem;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .home-download-btn .btn:first-child {
+    margin-left: 0;
+}
+
+#home .home-download-btn .btn:hover {
+    transform: translateY(-0.313rem);
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+#home .home-download-btn span{
+    font-size: 1.688rem;
+    margin-right: 0.625rem;
+}
+.home-image{
+    text-align: right;
+    transform: rotate(-345deg);
+}
+.home-image img{
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
 /* :: 6.0 Counter CSS  */
 
 
