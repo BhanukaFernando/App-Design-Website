@@ -25,11 +25,9 @@ function navMenu(){
         }
     }
 }
-
-
+navMenu();
 
 // counter design
-
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration){
         let obj = document.getElementById(id),
@@ -50,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count3", 0, 30, 4000);
     counter("count4", 0, 10, 2000);
  });
-
 
  // APP-SCREEN
 
