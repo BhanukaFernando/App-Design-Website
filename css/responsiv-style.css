@@ -97,7 +97,9 @@
         transform: rotate(0deg);
     }
     /* :: 6.0 Counter CSS */
-
+    .single_counter:nth-child(2):after{
+        display:none;
+    } 
 
     /* :: 8.0 Features CSS */
 
