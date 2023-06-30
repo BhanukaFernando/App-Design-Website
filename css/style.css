@@ -40,7 +40,6 @@
 
     /* Text Color */
     --primary-font: "Poppins", sans-serif;
-    ;
     --text-white: #fff;
     --text-black: #2C2C2C;
     --text-light-black: #444;
@@ -325,6 +324,7 @@ img {
         transform: translateY(-3.5rem);
     }
 }
+
 /* :: 6.0 Counter CSS  */
 .counter_area{
     padding:6.875rem 0 1.875rem;
@@ -352,6 +352,7 @@ img {
 .single_counter:last-child::after{
     display:none;
 }
+
 /* :: 7.0 Promo CSS */
 .promo_section{
     padding: 6.25rem 0 4rem;
@@ -431,6 +432,7 @@ img {
     padding-top: 0.625rem;
     font-size: 0.938rem;
 }
+
 /* :: 8.0 Features CSS */
 #features .title{
     height: 800px;
@@ -502,8 +504,24 @@ svg:not(:root):svg-inline-fa{
     color:var(--text-white); 
     background:var(--bg-gradient);
 }
-/* :: 9.0 app-screenshots CSS */
 
+/* :: 9.0 app-screenshots CSS */
+.app-screen {
+    padding-bottom: 5.313rem;
+}
+.app-screen .swiper-slide {
+    width: 263px !important;
+    height: auto;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.5rem;
+    
+}
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--bg-light-pink);
+}
 
 
 /* :: 10.0 pricing CSS */
