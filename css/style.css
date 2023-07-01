@@ -640,7 +640,12 @@ svg:not(:root):svg-inline-fa{
     border:none;
 }
 /* :: 12.0 Footer CSS */
-
-
+.copyright{
+    background:var(--bg-gradient);
+}
+.copyright p,
+.copyright a{
+    color:var(--text-white);
+} 
 
 /* :: 13.0 Scroll Top CSS */
