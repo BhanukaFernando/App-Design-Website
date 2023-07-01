@@ -76,3 +76,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
  
 // Side Navigation Bar Close While We click On Navigation Links
+
+let navBar = document.querySelectorAll('.nav-link');
+let navCollapse = document.querySelector('.navbar-collapse.collapse');
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+}) 
